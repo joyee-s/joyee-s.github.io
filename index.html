@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayeeta Das - Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for section headers */
+        .section-header::after {
+            content: '';
+            display: block;
+            width: 4rem; /* 64px */
+            height: 0.25rem; /* 4px */
+            background-color: #4f46e5; /* indigo-600 */
+            margin: 1rem auto 0; /* mt-4 */
+            border-radius: 0.125rem; /* rounded-sm */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- =========== Header / Navigation =========== -->
+    <header class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#home" class="text-2xl font-bold text-indigo-600">
+                    Jayeeta
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="font-medium text-gray-600 hover:text-indigo-600 transition duration-300">Home</a>
+                    <a href="#about" class="font-medium text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                    <a href="#experience" class="font-medium text-gray-600 hover:text-indigo-600 transition duration-300">Experience</a>
+                    <a href="#education" class="font-medium text-gray-600 hover:text-indigo-600 transition duration-300">Education</a>
+                    <a href="#contact" class="font-medium text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Hamburger Icon -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Home</a>
+                <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">About</a>
+                <a href="#experience" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Experience</a>
+                <a href="#education" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Education</a>
+                <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========== Main Content =========== -->
+    <main>
+
+        <!-- =========== Hero Section =========== -->
+        <section id="home" class="bg-white pt-24 pb-20 md:pt-32 md:pb-28">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Hero Text -->
+                    <div class="text-center md:text-left">
+                        <span class="text-indigo-600 font-semibold uppercase tracking-wide">Immunology &amp; Cell Biology</span>
+                        <h1 class="mt-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                            Hi, I'm Jayeeta Das
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-600 max-w-xl mx-auto md:mx-0">
+                            I'm on a mission to uncover the secrets of life, one cell at a time.
+                        </p>
+                        <!-- CTAs -->
+                        <div class="mt-8 flex justify-center md:justify-start gap-4">
+                            <a href="#experience" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-indigo-700 transition-transform duration-300 hover:-translate-y-0.5 transform">
+                                View My Experience
+                            </a>
+                            <a href="#contact" class="inline-block bg-gray-100 text-gray-700 px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-gray-200 transition-transform duration-300 hover:-translate-y-0.5 transform">
+                                Get in Touch
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Hero Image -->
+                    <div class="flex justify-center">
+                        <img 
+                            src="https://placehold.co/600x600/E9D5FF/4338CA?text=Jayeeta+Das" 
+                            alt="A professional portrait of Jayeeta Das"
+                            class="rounded-full shadow-2xl w-3/4 max-w-sm md:w-full md:max-w-md"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x600/E9D5FF/4338CA?text=Image+Error';"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== About Section =========== -->
+        <section id="about" class="bg-gray-50/70 py-20">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <h2 class="section-header text-3xl sm:text-4xl font-bold text-center text-gray-900">
+                    About Me
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16 items-start">
+                    <!-- My Story -->
+                    <div class="md:col-span-2 space-y-4 text-gray-600 text-lg">
+                        <p>
+                            Hello! I'm Jayeeta, a passionate Life Science postgraduate based in Kolkata, West Bengal. My M.Sc. in Immunology sparked a deep interest in protein and cell biology, especially within the world of immuno-oncology.
+                        </p>
+                        <p>
+                            This passion was at the heart of my Master's project, where I dived deep into the tumour microenvironment of breast carcinoma. I focused on T-cell exhaustion, analyzing markers like PD-1, Tim-3, and CD39 in both Swiss Albino mouse models and human clinical samples.
+                        </p>
+                        <p>
+                            This research gave me a fascinating first-hand look at how T-cells get "tired" from chronic stimulation in tumors, which helps cancer evade our immune system. It really nurtured my interest in understanding T-cell dysfunction and, more importantly, figuring out how we might reverse it to fight cancer more effectively.
+                        </p>
+                         <p>
+                            This project wasn't just theoretical; it was my technical foundation. I became proficient in multi-parameter flow cytometry, IHC, IF, ELISA, PCR, and Western blotting. More importantly, it honed my skills in experimental design, data analysis, and scientific communication.
+                        </p>
+                        <p>
+                            I am eager to apply this research experience to an Antibody Development role, contributing to reagent innovation and specificity.
+                        </p>
+                    </div>
+                    <!-- Skills -->
+                    <div class="md:col-span-1 bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Core Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Flow Cytometry</span>
+                            <span class="skill-tag">ELISA</span>
+                            <span class="skill-tag">Western Blotting</span>
+                            <span class="skill-tag">IHC &amp; IF</span>
+                            <span class="skill-tag">RT-PCR &amp; PCR</span>
+                            <span class="skill-tag">T-Cell Culture</span>
+                            <span class="skill-tag">FlowJo</span>
+                            <span class="skill-tag">FCS Express</span>
+                            <span class="skill-tag">GraphPad Prism</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Experimental Design</span>
+                            <span class="skill-tag">Data Interpretation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom style for skill tags -->
+            <style>
+                .skill-tag {
+                    background-color: #EEF2FF; /* indigo-100 */
+                    color: #4338CA; /* indigo-700 */
+                    padding: 0.25rem 0.75rem; /* px-3 py-1 */
+                    border-radius: 9999px; /* rounded-full */
+                    font-size: 0.875rem; /* text-sm */
+                    font-weight: 500; /* font-medium */
+                }
+            </style>
+        </section>
+
+        <!-- =========== Experience Section =========== -->
+        <section id="experience" class="bg-white py-20">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <h2 class="section-header text-3xl sm:text-4xl font-bold text-center text-gray-900">
+                    Professional Experience
+                </h2>
+                <p class="text-lg text-gray-600 text-center mt-6 max-w-2xl mx-auto">
+                    A summary of my key professional and research roles.
+                </p>
+                
+                <!-- Experience Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                    
+                    <!-- Experience Card 1: Researcher -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <img 
+                            src="https://placehold.co/600x400/C4B5FD/4338CA?text=Immuno-Oncology+Research" 
+                            alt="Immuno-Oncology Research" 
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/C4B5FD/4338CA?text=Research';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">M.Sc. Thesis Researcher</h3>
+                            <p class="text-sm text-gray-500 mb-2">University of Calcutta (July 2018 - Aug 2019)</p>
+                            <p class="text-gray-600 mb-4">
+                                Led thesis project on the breast carcinoma tumor microenvironment (TME), focusing on T-cell exhaustion markers (PD1, Tim3, CD39) using multi-parameter flow cytometry.
+                            </p>
+                            <!-- Tech Tags -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full font-medium">Flow Cytometry</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full font-medium">FlowJo</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full font-medium">IHC &amp; IF</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full font-medium">ELISA</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full font-medium">Western Blot</span>
+                            </div>
+                            <!-- Links removed -->
+                        </div>
+                    </div>
+
+                    <!-- Experience Card 2: Teacher -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <img 
+                            src="https://placehold.co/600x400/A5B4FC/312E81?text=Biological+Science+Teacher" 
+                            alt="Biological Science Teacher" 
+                            class="w-full h-48 object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/A5B4FC/312E81?text=Teaching';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Assistant Teacher (Biological Science)</h3>
+                            <p class="text-sm text-gray-500 mb-2">National High School, Kolkata (Nov 2022 - Dec 2024)</p>
+                            <p class="text-gray-600 mb-4">
+                                Developed and presented complex biological training modules for Higher Secondary (Class XI-XII) students. Managed program logistics, scheduling, and documentation.
+                            </p>
+                            <!-- Tech Tags -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full font-medium">Public Speaking</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full font-medium">Curriculum Development</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full font-medium">Organizational Planning</span>
+                            </div>
+                            <!-- Links removed -->
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 Removed -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Education & Certs Section =========== -->
+        <section id="education" class="bg-gray-50/70 py-20">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <h2 class="section-header text-3xl sm:text-4xl font-bold text-center text-gray-900">
+                    Education &amp; Certifications
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
+                    <!-- Education -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Education</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-lg font-semibold text-indigo-700">Bachelor of Education (Life Science)</h4>
+                                <p class="text-gray-600">WBUTTEPA (2020 - 2022)</p>
+                                <p class="text-sm text-gray-500">CGPA: 8.33 / 10</p>
+                            </div>
+                            <div class="border-t pt-4">
+                                <h4 class="text-lg font-semibold text-indigo-700">M.Sc. in Zoology (Immunology)</h4>
+                                <p class="text-gray-600">University of Calcutta (2017 - 2019)</p>
+                                <p class="text-sm text-gray-500">Marks: 79.6%</p>
+                            </div>
+                            <div class="border-t pt-4">
+                                <h4 class="text-lg font-semibold text-indigo-700">B.Sc. (Hons. in Zoology)</h4>
+                                <p class="text-gray-600">Bethune College, University of Calcutta (2014 - 2017)</p>
+                                <p class="text-sm text-gray-500">Marks: 78.25%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certifications & Conferences -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Certifications</h3>
+                        <ul class="space-y-2 list-none">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-600 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Qualified GATE 2022</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-600 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Qualified CTET December 2022</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-600 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Qualified West Bengal TET 2022</li>
+                        </ul>
+                        
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6 mt-8">Conferences Attended</h3>
+                        <ul class="space-y-2 list-none text-gray-700">
+                           <li class="flex items-center"><svg class="w-5 h-5 text-indigo-600 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>ALLERCON 2019</li>
+                           <li class="flex items-center"><svg class="w-5 h-5 text-indigo-600 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>BIOSCOPE 2019</li>
+                           <li class="flex items-center"><svg class="w-5 h-5 text-indigo-600 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>INTZOOCON 2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Contact Section =========== -->
+        <section id="contact" class="bg-gray-50/70 py-20">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <h2 class="section-header text-3xl sm:text-4xl font-bold text-center text-gray-900">
+                    Get In Touch
+                </h2>
+                <p class="text-lg text-gray-600 text-center mt-6 max-w-2xl mx-auto">
+                    Have a project in mind or just want to say hi? My inbox is always open.
+                    Fill out the form below, or email me at <a href="mailto:dasjayeeta96@gmail.com" class="text-indigo-600 font-medium hover:underline">dasjayeeta96@gmail.com</a>.
+                </p>
+
+                <!-- Contact Form -->
+                <div class="max-w-lg mx-auto mt-12">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" name="name" id="name" autocomplete="name" required
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" name="email" id="email" autocomplete="email" required
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full flex justify-center py-3 px-6 border border-transparent rounded-lg shadow-lg text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-transform duration-300 hover:-translate-y-0.5 transform">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========== Footer =========== -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <p class="text-sm">
+                    &copy; 2025 Jayeeta Das. All rights reserved.
+                </p>
+                <!-- Social Links -->
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/jayeeta-das-661676211" target="_blank" rel="noopener noreferrer" class="hover:text-white transition duration-300" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93-.78 0-1.22.51-1.42 1-.07.17-.1.38-.1.6v5.07H10v-9h2.87v1.44s.44-.71 1.58- .71c1.2 0 2.05.78 2.05 2.32V19z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            // Toggle menu
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close menu when a link is clicked
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
